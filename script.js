@@ -33,7 +33,29 @@ class HangmanGame {
     }
   }
 
-  updateHangmanImage() {}
+  updateHangmanImage() {
+    const hangmanImage = document.getElementById('hangman-image');
+    const head = document.getElementById('hangman-head');
+    const body = document.getElementById('hangman-body');
+    const leftArm = document.getElementById('hangman-left-arm');
+    const rightArm = document.getElementById('hangman-right-arm');
+    const leftLeg = document.getElementById('hangman-left-leg');
+    const rightLeg = document.getElementById('hangman-right-leg');
+
+    if (this.guessesLeft === 5) {
+      head.style.display = 'block';
+    } else if (this.guessesLeft === 4) {
+      body.style.display = 'block';
+    } else if (this.guessesLeft === 3) {
+      leftArm.style.display = 'block';
+    } else if (this.guessesLeft === 2) {
+      rightArm.style.display = 'block';
+    } else if (this.guessesLeft === 1) {
+      leftLeg.style.display = 'block';
+    } else if (this.guessesLeft === 0) {
+      rightLeg.style.display = 'block';
+    }
+  }
 
   resetGame() {
     this.wordEl.textContent = '';

@@ -34,3 +34,76 @@ h1 {
   background-color: #eee;
   cursor: pointer;
 }
+
+#hangman-image {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px dotted black;
+  margin: 0 auto;
+}
+
+#hangman-head {
+  position: absolute;
+  top: 25px;
+  left: 75px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: black;
+  display: none;
+}
+
+#hangman-body {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  width: 50px;
+  height: 100px;
+  background-color: black;
+  display: none;
+}
+
+#hangman-left-arm {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 50px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(45deg);
+  display: none;
+}
+
+#hangman-right-arm {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  width: 50px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(-45deg);
+  display: none;
+}
+
+#hangman-left-leg {
+  position: absolute;
+  top: 175px;
+  left: 50px;
+  width: 50px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(90deg);
+  display: none;
+}
+
+#hangman-right-leg {
+  position: absolute;
+  top: 175px;
+  right: 50px;
+  width: 50px;
+  height: 20px;
+  background-color: black;
+  transform: rotate(-90deg);
+  display: none;
+}
